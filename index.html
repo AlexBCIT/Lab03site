@@ -24,39 +24,54 @@
 
 <body class="page page-home">
     <header class="page__header">
-        <div class="row"></div>
-        <div class="page__logo">
-            <img src="img/metrolics.png" alt="Metrolics logo">
+        <div class="row m-1-2">
+            <div class="column">
+                <img src="img/metrolics.png" alt="Metrolics logo">
+            </div>
+
+            <div class="column">
+                <nav class="main-nav">
+                    <div class="menu-item">
+                        <a href="#">Home</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">Pages</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">Blog</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">Portfolio</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">Content</a>
+                    </div>
+                </nav>
+            </div>
         </div>
+
     </header>
 
-    <div class="page__slider">
-        <div class="row">
-            <div class="column">
-                <img src="img/min.png" alt="hero slider">
-            </div>    
+    <div class="hero-area">
+        <div class="slider">
+            <ul class="slider__slides">
+                <li class="slide">
+                    <a href="#" class="slide__link">
+                        <img src="img/bannerimg.png" alt="slider alt" class="slide__img">
+                        <ul class="slide__info">
+                            <li class="slide__info__item">Metro Style</li>
+                            <li class="slide__info__item">Retina Ready</li>
+                            <li class="slide__info__item">Responsive Design</li>
+                        </ul>>
+                    </a>
+                </li>
+                <!-- slide -->
+            </ul>
+            <!-- slides -->
         </div>
+        <!-- slider -->
     </div>
-
-    <div class="">
-        <nav class="main-nav">
-            <div class="menu-item">
-                <a href="#">Home</a>
-            </div>
-            <div class="menu-item">
-                <a href="#">Pages</a>
-            </div>
-            <div class="menu-item">
-                <a href="#">Blog</a>
-            </div>
-            <div class="menu-item">
-                <a href="#">Portfolio</a>
-            </div>
-            <div class="menu-item">
-                <a href="#">Content</a>
-            </div>
-        </nav>
-    </div>
+    <!-- hero-area -->
 
     <div class="page__intro">
         <div class="row">
@@ -98,7 +113,7 @@
                 <h2 class="heading">Whats up lately?</h2>
                 <h4 class="heading">Read up on out latest work</h4>
             </div>
-            <div class="column">
+            <div class="column special-project">
                 <figure class="project">
                     <img src="img/uhhhh.png" alt="project image">
                     <figcaption class="project__caption">
