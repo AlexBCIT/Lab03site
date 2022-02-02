@@ -22,11 +22,12 @@
     <meta name="theme-color" content="#fafafa">
 </head>
 
-<body class="page__home">
+<body class="page page--home">
     <header class="page__header">
-        <h1 class="page__logo">
-            Metrolics
-        </h1>
+        <div class="page__logo">
+            <img src="img/metrolics.png" alt="Metrolics logo">
+            <img id="iconlogo" src="img/metrolicslogo.png" alt="Metrolics icon logo">
+        </div>
         <img src="img/min.png" alt="minion">
     </header>
 
@@ -50,34 +51,31 @@
             </nav>
           
         </div>
-        <div>
+        <main class="first_content_section">
             <div class="title_page">
-                <h3> Hey guys! This is the Metrolics theme.
-                    It sports a responsive layout with a mobile layout.</h3>
+                <h1> Hey guys! This is the Metrolics theme.
+                    It sports a responsive layout with a mobile layout.</h1>
 
-                <div class="thing_thatwedo">
+                <div class="title_page_header">
                     <h4> Things that we do.</h4>
+                </div>
 
-                    <div class="Ask_Us">
-                        <h4> Ask us what we can do for you.</h4>
+                <div class="title_page_header2">
+                    <h4> Ask us what we can do for you.</h4>
+                </div>
 
-                    </div>
-
-
-
-                    <main class="page__main_1">
+                    <section class="page__main_1">
                         <section class="page__main__section">
                             <div class="title">
                                 <h4>Web Solutions</h4>
                             </div>
-
                         </section>
                         <section class="page__main__section">
-                            <div class="">
+                            <div class="section_header">
                                 <h4>Photography</h4>
                             </div>
                         </section>
-                    </main>
+                    </section>
 
                     <section class="page__section">
                         <div class="page__main__section">
@@ -87,41 +85,49 @@
 
                 </section>
                 <section class="page__main__section">
-                    <div class="">
+                    <div class="section_header2">
                         <h4>Web Design</h4>
                     </div>
                 </section>
-            </main>
+        </main>
 
             <section class="latest projects">
                 <div class="latestprojects_text">
                     <h2>Whats up lately?</h2>
                     <p>Read up on out latest work</p>
                 </div>
-                <div class="latestprojects__images">
-                    <img src="img/uhhhh.png" alt="DJ setup">
-                    <img src="img/uhhhh.png" alt="DJ setup">
-                    <img src="img/uhhhh.png" alt="DJ setup">
-
+                <section class="blog">
+                    <header class="blog__header">
+                        <h2 class="section__heading">What's Up Lately?</h2>
+                        <h4 class="section__tagline">Read up on our latest work</h4>
+                    </header>
+                    <article class="blog__entry">
+                        <span class="date">
+                            <span class="date__day">29</span>
+                        <span class="date__month">Nov</span>
+                        <span class="date__year">2013</span>
+                        </span>
+                        <h3 class="blog__entry__heading">Sample Image Post</h3>
+                        <img class="blog__entry__thumbnail" src="img/uhhhh.png" alt="blog thumbnail" />
+                        <span class="tag tag--photography">Photography</span>
+                    </article>
+                </section>
             </section>
         </main>
 
     
         </section>
-        <section class="latestprojects">
-            <div class="latestprojects__text">
-                <h3>Our Latest Projects</h3>
-                <p>Client Happy? We are happy.</p>
+        <section class="projects projects--latest">
+            <header class="projects__header">
+                <h2 class="section__heading">what's up lately</h2>
+            </header>
+            <div class="project">
+                <h2 class="project__heading">Sample Image Post</h2>
+                <h4 class="project__tagline">Photography</h4>
+                <span class="tag tag--project">project</span><!-- may not need this if icon is same for all -->
+                <img class="project__thumbnail" src="img/uhhhh.png" alt="project thumbnail" />
             </div>
-            <div class="latestprojects__images">
-                <img src="img/uhhhh.png" alt="DJ setup">
-                <img src="img/uhhhh.png" alt="DJ setup">
-                <img src="img/uhhhh.png" alt="DJ setup">
-                <img src="img/uhhhh.png" alt="DJ setup">
-                <img src="img/uhhhh.png" alt="DJ setup">
-                <img src="img/uhhhh.png" alt="DJ setup">
-            </div>
-        </section>
+        </section> 
     </main>
 
     <section class="bottom__section">
@@ -188,7 +194,7 @@
     </section>
 
     <footer class="page__footer">
-        <div class="footer__Peewee">
+        <div class="footer__Header">
             <img src="img/peewee.png" alt="peeweeherman">
             <h3>Peewee Herman</h3>
             <p class="peewee__text">Peewee has over 10 years experience in the industry. He is our Creative Director,
