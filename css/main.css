@@ -108,20 +108,77 @@ h1 {
    ========================================================================== */
 
 div, section, footer, header {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .column {
-  background-color: #b3d4fc;
-  margin: 1rem;
+  /* background-color: #b3d4fc;
+  margin: 1rem; */
 }
 
 .heading {
   text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.tagline {
+  margin-top: -0.8rem;
+  font-size: 0.7rem;
+  text-align: center;
+  color: rgb(128, 128, 128);
+}
+
+.logo {
+  max-height: 2.5rem;
+}
+
+/* main nav mobile first */
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-nav__item {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 1rem 1rem 1rem 100%;
+  font-size: 1.3rem;
+  text-decoration: none;
+  text-align: left;
+  color: white;
+  line-height: 4rem;
+  background-repeat: no-repeat;
+}
+
+.main-nav__item::after {
+  content: ">";
+  display: inline-block;
+  position: absolute;
+  right: 1rem;
+}
+
+.main-nav__item.active::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 1rem;
+}
+
+
 /* Small only */
-@media screen and (max-width: 39.9375em) {}
+@media screen and (max-width: 39.9375em) {
+  .logo {
+    max-height: 4rem;
+    position: static;
+  }
+
+  .m-hide {
+    display: none;
+  }
+}
 
 /* Medium and up */
 @media screen and (min-width: 40em) {
@@ -130,20 +187,27 @@ div, section, footer, header {
     width: 85vw;
     max-width: 70rem;
     margin: 0 auto;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    margin: 0 auto 3rem auto;
   }
 
   .m-col-2 {
     grid-template-columns: 1fr 1fr;
   }
+
   .m-col-3 {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .m-col-4 {
     grid-template-columns: repeat(4, 1fr);
   }
+
   .m-col-5 {
     grid-template-columns: repeat(5, 1fr);
   }
+
   .span-full {
     grid-column-start: 1;
     grid-column-end: -1;
@@ -152,14 +216,34 @@ div, section, footer, header {
   .m-1-2{
     grid-template-columns: 1fr 2fr;
   }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-nav__item {
+    padding: 4rem 1rem 0rem 0.5rem;
+    line-height: 2rem;
+    font-size: 0.8rem;
+    text-align: left;
+    background-color: rgb(184, 184, 184);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 2.3rem, 1.4rem;
+  }
 }
 
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-
   .special-project{
     grid-column-start: 1;
     grid-column-end: -1;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -168,31 +252,71 @@ div, section, footer, header {
   .l-col-2 {
     grid-template-columns: 1fr 1fr;
   }
+
   .l-col-3 {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .l-col-4 {
     grid-template-columns: repeat(4, 1fr);
   }
+
   .l-col-5 {
     grid-template-columns: repeat(5, 1fr);
   }
+
   .l-col-6 {
     grid-template-columns: repeat(6, 1fr);
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
   }
 }
 
 /* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+  .l-hide {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
 
 /* ==========================================================================
    Modules
    ========================================================================== */
 
+.hero-area {
+  background-color: rgb(230, 230, 230);
+}
 
+/* main nav colours and icons */
 
+.main-nav__item:nth-child(1) {
+  background-color: #25c389;
+}
 
+.main-nav__item:nth-child(2) {
+  background-color: #ffb901;
+}
+
+.main-nav__item:nth-child(3) {
+  background-color: #de6262;
+}
+
+.main-nav__item:nth-child(4) {
+  background-color: #1691bd;
+}
+
+.main-nav__item:nth-child(5) {
+  background-color: #166ba2;
+}
 
 /* ==========================================================================
    Theme
